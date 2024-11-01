@@ -34,7 +34,7 @@ body {
 	margin: 50px auto 0;
 	width: 180px;
 	height: 220px;
-	background: #012406;
+	background: #d3d3d3;
 	border-top-left-radius: 90px;
 	border-top-right-radius: 90px;
 }
@@ -75,12 +75,12 @@ body {
 	display: block;
 	width: 30px;
 	height: 30px;
-	background: #252c49;
+	background: #323332;
 	border-radius: 50%;
 }
 
 #spooky #body #mouth {
-	background: #252c49;
+	background: #323332;
 	margin: 25px auto 0;
 	width: 60px;
 	height: 30px;
@@ -111,13 +111,13 @@ body {
 	content: " ";
 	width: 36px;
 	height: 36px;
-	background: #f2fbf1;
+	background: #d3d3d3;
 	border-radius: 50%;
 }
 
 #shadow {
 	margin: -90px auto 0;
-	background: #252c49;
+	background: rgba(211, 211, 211, 0.5);
 	width: 180px;
 	height: 40px;
 	border-radius: 50%;
@@ -144,4 +144,23 @@ body {
 	50% {
 		transform: scale(0.8);
 	}
+}
+
+#spooky:hover #body {
+	background: #ff4500;
+}
+
+#spooky:hover #body:before,
+#spooky:hover #body:after,
+#spooky:hover #body #eyes:before,
+#spooky:hover #body #eyes:after,
+#spooky:hover #body #mouth,
+#spooky:hover #body #feet > * {
+	background: #ff0000;
+}
+
+#spooky:hover #body #mouth {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	height: 20px;
 }
